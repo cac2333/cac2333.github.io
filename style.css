@@ -1803,6 +1803,12 @@ hr.invis1 {
     margin: auto;
 }
 
+.img-fit{
+    object-fit: contain !important;
+    height: auto;
+    /* width: 100% !important; */
+}
+
 #features li p {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -2834,4 +2840,39 @@ select.mobile-device {
 
 .mycenter{
     text-align: center;
+}
+
+.fixed-empty-placeholder{
+    height: 180px;
+    width: 100%;
+}
+
+/* 1. Force the inner flex container to center text and headings */
+#services .slider-inner, 
+#services .section-title {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;   /* Centers horizontally in Flexbox */
+    justify-content: center !important; /* Centers vertically */
+    width: 100% !important;
+}
+
+/* 2. Force headings to behave as full-width block elements */
+#services .slider-inner h1, 
+#services .slider-inner h5, 
+#services .section-title h3 {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 3. Force the foreground slider image to center itself */
+#services .slider-inner img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
 }
